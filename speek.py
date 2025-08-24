@@ -13,7 +13,7 @@ import getpass
 import subprocess
 
 def get_weather(city):
-    api_key = 'd820bcf63a8b6f928105a4bd99a84c9c'
+    api_key = 'api'
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={api_key}"
     response = requests.get(url)
     data = response.json()
@@ -284,4 +284,5 @@ if __name__ == "__main__":
                     pyautogui.sleep(2)
                     speak("SMILE")
                     pyautogui.press("enter")
+
                 
