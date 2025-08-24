@@ -12,7 +12,7 @@ def speak(audio):
     engine.runAndWait()
 
 def WolfRamAlpha(query):
-    apikey = "QVQ9TQ-5YT44KXA9X"
+    apikey = "api"
     requester = wolframalpha.Client(apikey)
     requested = requester.query(query)
 
@@ -37,4 +37,5 @@ def Calc(query):
         speak(result)
 
     except:
+
         speak("The value is not answerable")
